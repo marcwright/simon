@@ -1,0 +1,22 @@
+div {
+  height: 200px;
+  width: 200px;
+}
+.board {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#red {
+  background-color: red;
+}
+#yellow {
+  background-color: yellow;
+}
+#blue {
+  background-color: blue;
+}
+#green {
+  background-color: green;
+}
