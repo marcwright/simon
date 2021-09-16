@@ -33,3 +33,8 @@ div {
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
 }
+.blink2 {
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}

@@ -6,10 +6,18 @@ let moveCount = 0;
 function simonAnimation() {
   console.log(simonMoves);
   simonMoves.forEach((move, index) => {
-    setTimeout(function () {
-      move.classList.remove('blink');
-      move.classList.add('blink');
-    }, `${index * 1000}`);
+    (function () {
+      let count = index + 1;
+      setTimeout(function () {
+        console.log('1', count * 500);
+        move.classList.add('blink');
+        move.classList.remove('blink');
+      }, count * 500);
+      setTimeout(function () {
+        console.log('2', count * 1000);
+        move.classList.add('blink');
+      }, count * 1000);
+    })(index);
   });
 }
 
